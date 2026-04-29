@@ -5,16 +5,16 @@
     # These will be overridden by the user's flake
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-    #quickshell = {
-    #  url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
-    #  inputs.nixpkgs.follows = "nixpkgs";
-    #};
-
-    #temp quickshell workaround 
     quickshell = {
-      url = "github:quickshell-mirror/quickshell/db1777c20b936a86528c1095cbcb1ebd92801402";
+      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    #temp quickshell workaround 
+    #quickshell = {
+    #  url = "github:quickshell-mirror/quickshell/db1777c20b936a86528c1095cbcb1ebd92801402";
+    #  inputs.nixpkgs.follows = "nixpkgs";
+    #};
 
 
     nur = {
