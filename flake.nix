@@ -5,10 +5,17 @@
     # These will be overridden by the user's flake
     nixpkgs.url = "github:NixOS/nixpkgs/e8ce29b7561372469521b6573be2848c860c2101";
 
+    #quickshell = {
+    #  url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
+    #  inputs.nixpkgs.follows = "nixpkgs";
+    #};
+
+    #temp quickshell workaround 
     quickshell = {
-      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
+      url = "github:quickshell-mirror/quickshell/db1777c20b936a86528c1095cbcb1ebd92801402";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
 
     nur = {
       url = "github:nix-community/NUR";
