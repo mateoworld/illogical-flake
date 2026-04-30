@@ -130,6 +130,7 @@ in
       # Symlink other hyprland files individually
       "hypr/hyprland/colors.conf".source = "${dotfilesSource}/dots/.config/hypr/hyprland/colors.conf";
       "hypr/hyprland/execs.conf".source = "${dotfilesSource}/dots/.config/hypr/hyprland/execs.conf";
+      "hypr/hyprland/general.conf".source = "${dotfilesSource}/dots/.config/hypr/hyprland/general.conf";
       # Patch general.conf to remove obsolete hyprexpo options (enable_gesture, gesture_positive)
       # These were removed from the hyprexpo plugin API and cause "Invalid value false for finger count" error
       #"hypr/hyprland/general.conf".text = builtins.replaceStrings
